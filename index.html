@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SWAPI</title>
+</head>
+
+<body>
+    <header class="title">
+        <img src="img/people.png" alt="" class="img-header">
+    </header>
+    <main class="container">
+        <form action="method" class="form">
+            <select name="search" id="select-search" class="select">
+                <option value="">Opción de búsqueda</option>
+                <option value="films">Películas</option>
+                <option value="people">Personajes</option>
+                <option value="planets">Planetas</option>
+                <option value="species">Especies</option>
+                <option value="starships">Naves</option>
+                <option value="vehicles">Vehículos</option>
+            </select>
+            <label for="select" class="label">Introduce tu búsqueda</label>
+            <input type="text" class="input-search">
+
+        </form>
+        <button class="button">Explorar</button>
+
+        <ul class="list-result"></ul>
+    </main>
+    <footer class="footer">
+        <small class="small"></small>
+        <nav>
+            <i class="fas fa-rocket"></i>
+            webgrafía:
+            <a href="https://swapi.co/" class="link-footer">SWAPI</a>
+        </nav>
+        <audio src="audio/starwars-i_sfxzhimi.mp3" autoplay="true" loop="true"></audio>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

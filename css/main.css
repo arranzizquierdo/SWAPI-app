@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* HEADER */
+.title {
+    background-image: url(../img/title.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 150px;
+}
+.img-header {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 150px;
+    margin-left: 90px;
+}
+
+/* MAIN */
+.container {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* FORMULARIO */
+.form {
+    display: flex;
+    flex-direction: column; 
+}
+.select {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    height: 30px;
+    max-width: 300px;
+    background-color: rgba(184, 135, 11, 0.253);
+    border: 0;
+    cursor: pointer;
+    
+}
+.label {
+    margin: 15px auto;
+    font-size: 12px;
+}
+.input-search {
+    font-family: 'Press Start 2P', cursive;
+    height: 30px;
+    max-width: 300px;
+    background-color: rgba(184, 135, 11, 0.377);
+    border: 2px solid rgb(221, 181, 0);
+    color: black;
+    margin: 0px auto 10px; 
+    text-align: center;
+}
+.button {
+    font-family: 'Press Start 2P', cursive;
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    background-color: black;
+    color: rgb(221, 181, 0);
+}
+
+/* LISTA RESULTADOS */
+.list-result {
+    overflow: auto;
+    list-style: none;
+    max-height: 100px;
+}
+.item {
+    margin: 10px;
+}
+a{
+    color: #000;
+}
+/* FOOTER */
+.footer {
+    position: fixed;
+    bottom: 0;
+    border-top: 8px double rgb(221, 181, 0);
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+}
+.small {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.fa-rocket {
+    font-size: 35px;
+    padding: 5px;
+}
+.link-footer {
+    color: rgb(221, 181, 0);
+}
+
+@media all and (min-width: 1024px) {
+    .img-header {
+        margin-left: 280px;
+    }
+    .list-result {
+        max-height: 190px;
+        margin-top: 30px;
+    }
+    .input-search {
+        margin: 5px auto 20px; 
+        max-width: 400px;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .item {
+        margin: 20px;
+    }
+}
